@@ -1,0 +1,26 @@
+{
+  "name": "web-gui-random-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A web GUI exploration tester that can use screenshots and an LLM to choose actions.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "test": "npm run build"
+  },
+  "dependencies": {
+    "playwright": "^1.49.1",
+    "proxy-agent": "^8.0.1",
+    "seedrandom": "^3.0.5"
+  },
+  "optionalDependencies": {
+    "openai": "^4.82.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
